@@ -51,7 +51,7 @@ while End == "no":
                          f"> ").lower()
             items.remove(Item)
             Highest_bid = int(input("What would you like to make the starting bid?\n"
-                                    "> "))
+                                    ">$ "))
             Running_bid = ("True")
 
             Retun_to_Menu = input("ENTER ANYTHING TO RETURN TO MENU\n"
