@@ -1,34 +1,24 @@
-Highest_bid = 100
-Running_bid = "True"
+NUmbers = [1, 200, 3, 4, 50, 6, 7, 7, 9, 10, 0]
+people = ["bob", "Dick", "harry", "steve"]
 
+average = 0
+Big = 0
+Big_location = 0
+worst = ""
+#start code
 
+average = sum(NUmbers) / len(NUmbers)
+Big = max(NUmbers)
 
-#A
-new_bid = int(input(F"THE CURRENT HIGHEST BID IS {Highest_bid}\n"
-                    F"what would you like to bid?\n"
-                    F"> "))
-if new_bid == -1:
-    Running_bid = "False"
-elif new_bid >= Highest_bid:
-    Highest_bid = new_bid
+print(average, Big)
 
+Big_location = (NUmbers.index(Big))
+worst = (people[Big_location])
 
+print (Big_location, worst)
 
-#B
-def newbid(high):
-    global Highest_bid
-    global Running_bid
-
-    new_bid = int(input(F"THE CURRENT HIGHEST BID IS {high}\n"
-                        F"what would you like to bid?\n"
-                        F"> "))
-    if new_bid == -1:
-        Running_bid = "False"
-    elif new_bid >= (high):
-        Highest_bid = new_bid
-
-newbid(Highest_bid)
-
-
-
-print (Highest_bid)
+zeros = []
+for i, value in enumerate(NUmbers):
+    if i <= 1:
+       zeros.append(i)
+    print (zeros)
