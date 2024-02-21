@@ -1,24 +1,23 @@
-NUmbers = [1, 200, 3, 4, 50, 6, 7, 7, 9, 10, 0]
-people = ["bob", "Dick", "harry", "steve"]
+sub_1s = []
+list = [1, 2, 3, 40, 0, 1, 0]
+Output = []
+people = ["he", "me", "ta", "no", "bo", "chadrick", "jord", 'Zach']
 
-average = 0
-Big = 0
-Big_location = 0
-worst = ""
-#start code
 
-average = sum(NUmbers) / len(NUmbers)
-Big = max(NUmbers)
+list.append(int(input("enter a number: ")))
 
-print(average, Big)
+for location, value in enumerate(list):
+    if value < 5:
+        sub_1s.append(location)
 
-Big_location = (NUmbers.index(Big))
-worst = (people[Big_location])
+print("Indices of items less than 5:", sub_1s)
 
-print (Big_location, worst)
+for item in (sub_1s):
+    Output.append(people[item])
 
-zeros = []
-for i, value in enumerate(NUmbers):
-    if i <= 1:
-       zeros.append(i)
-    print (zeros)
+print (Output)
+
+
+
+
+
